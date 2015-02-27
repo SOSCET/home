@@ -9,22 +9,56 @@
     <title></title>
 </head>
 <body>
+    <nav class="navbar navbar-default navbar-static-top"> 
+        <a href="http://yan.studio-mouge.org/fateyan/test/" class="navbar-brand">SOSCET</a>
+    </nav>
     <header id="header">
-        <h1>HelloWorld!</h1>
+        <h1 class="welcome">HelloWorld</h1>
     </header>
-    <article class="container">
-        <section class="about">
-        
+    <article class="wrapper">
+        <section id="about" class="panel panel-default">
+            <div class="panel-heading">
+                <h1 class="text-center">關於我們</h1>
+            </div>          
+            <div class="panel-body">
+                測試
+            </div>
         </section>
-        <section class="idea">
-            
+        <section id="idea" class="panel panel-default">
+            <div class="panel-heading">
+                <h1 class="text-center">理念</h1>
+            </div>          
+            <div class="panel-body">
+                測試
+            </div>
         </section>
-        <section class="property">
-
+        <section id="property" class="panel panel-default">
+            <div class="panel-heading">
+                <h1 class="text-center">性質</h1>
+            </div>          
+            <div class="panel-body">
+                測試
+            </div>
         </section>
-        <section class="meetup">
-
+        <section id="meetup" class="panel panel-default">
+            <div class="panel-heading">
+                <h1 class="text-center">聚會</h1>
+            </div>          
+            <div class="panel-body">
+                測試
+            </div>
         </section>
     </article>
+    <script type="text/javascript">
+      var content = $(".wrapper > section:even");
+      var heading = $(".wrapper > section:even > .panel-heading");
+      heading.css({"background": "#555",
+                   "color": "#f1f1f1"
+                  });
+      content.css({"background": "#555",
+                   "color": "#f1f1f1"
+                  });
+      
+    </script>
 </body>
 </html>
