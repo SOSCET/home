@@ -25,27 +25,36 @@
     header {
         background: rgb(69,72,77);
         background-color: #fff;
-        height: 80vh;
+        height: 50vh;
         margin: 0px;
         padding: 0px;
     }
     .header {
         color: #fff;
-        text-shadow: #000 0 0 0.3rem;
+        text-shadow: #000 0 0 0.7rem;
         text-align: center;
         display: block;
         width: 100%;
         padding:0px;
         margin: 0px;
         position: relative;
+        transition: all 0.3s ease 0.2s;
     }
     .mainHead {
-        padding: 35vh 0px 0px 0px;
+        margin: 35vh 0px 0px 0px;
         font-size: 5em;
+        padding: 0px;
+    }
+    .mainHead:hover {
+        text-shadow: #000 0 0 0.4rem;
     }
     .subHead {
+        text-shadow: #000 0 0 0.5rem;
         padding: 0.3em 0px;
         font-size: 2em;
+    }
+    .subHead:hover {
+        text-shadow: #000 0 0 0.3rem;
     }
     .nav {
         width: 100%;
@@ -59,7 +68,7 @@
         transition: all 0.3s ease 0.2s;
     }
     .nav:hover {
-        box-shadow: #333 0 2px 12px;
+        box-shadow: #666 0 2px 12px;
     }
     .navitem {
         display: inline-block;
@@ -89,20 +98,54 @@
         margin: auto;
     }
     .wrapper {
+        font-size: 120%;
         margin-top: 8em;
         min-height: 500px;
+    }
+    .conthead {
+        text-indent: 0em;
+        font-size: 2em;
     }
     #about,
     #property,
     #idea,
     #gathering {
         color: #333;
+        text-align: left;
+        text-indent: 2em;
+    }
+    #idea>ol {
+        margin-left: 1em;
+        font-size: 1em;
+    }
+    /* Table */
+    .layoutTable {
+        margin: 0 auto;
+        width: 100%;
+        table-layout: fixed;
+    }
+    .layoutTable > tbody > tr > td {
+        padding: 0.5rem 1rem;
+        font-size: 1.15rem;
+        text-align: center;
+        text-indent: 0em;
+    }
+    tr:nth-child(odd) {
+        background-color:#f5f5f5;
+    }
+    tr:nth-child(1) {
+        color: white;
+        background-color: #444;
+    }
+    footer {
         text-align: center;
     }
-    #about h1 {
-
+    /* RWD */
+    @media screen and (max-width: 640px) {
+        .container {
+            width: 100%;
+        }
     }
-
     </style>
 </head>
 <body>
@@ -112,36 +155,44 @@
     </header>
     <div class="nav">
         <a href="#about" class="navitem">關於SOSCET</a>
-        <a href="#" class="navitem">理念</a>
-        <a href="#" class="navitem">性質</a>
-        <a href="#" class="navitem">聚會</a>
+        <a href="#idea" class="navitem">理念</a>
+        <a href="#property" class="navitem">性質</a>
+        <a href="#gathering" class="navitem">聚會</a>
     </div>
     <article class="wrapper">
         <section id="about" class="container">
-            <h1>關於SOSCET</h1>
+            <h1 class="conthead">關於SOSCET</h1>
             <p>
                 SOSCET 是由花蓮在地學生發起的學生開源社群，我們強調讓同學們在實作中學習各類資訊相關的技術，並藉由社群活動、讓學生們能夠彼此互相學習，助人助己。<br>
                 <del>SOSCET，就決定是你了！</del>
             </p>
         </section>
         <section id="idea" class="container">
-            <h1>理念</h1>
+            <h1 class="conthead">理念</h1>
             <p>
-                關於我們的理念...
+                <ol class="conthead">
+                    <li>我們主張、追求並提倡自由、開放。</li>
+                    <li>Open Source 同時也是一種生活態度</li>
+                    <li>It's better when it's shared</li>
+                </ol>
+
             </p>
         </section>
         <section id="property" class="container">
-            <h1>性質</h1>
+            <h1 class="conthead">性質</h1>
             <p>
                 
             </p>
         </section>
         <section id="gathering" class="container">
-            <h1>聚會</h1>
-            <p>
-                <p><a href="http://sitcon.kktix.cc/events/hualien-soscet-01">4/11定期聚 Sitcon x SOSCET</a></p>
-                
-            </p>
+            <h1 class="conthead">聚會</h1>
+                <table border="0" cellspacing="0" cellpadding="0" class="layoutTable">
+                    <tbody>
+                        <tr><td width="10%">日期</td><td width="15%">類型</td><td width="30%">主題</td><td>備註</td></tr>
+                        <tr><td>4/11</td><td>定期聚</td><td>Sitcon x SOSCET</td><td><a href="http://sitcon.kktix.cc/events/hualien-soscet-01">活動網頁</a><br/>詳情請參見網頁</td></tr>
+                        <tr>　<td></td><td>　</td><td>　</td><td></td>　</tr>
+                    </tbody>
+                </table>
         </section>
     </article>
     <footer>2012-2014 &copy; <a href="https://soscet.github.io/">SOSCET</a>, All Rights Reserved.</footer>
