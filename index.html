@@ -3,12 +3,24 @@
 <head>
     <title></title>
     <meta charset="utf-8">
+    <meta description="台灣東部開源社群 SOSCET ">
+    <meta keywords="opensource,學生,開源,東部,資訊,IT,Computer,年會,東部開源學生社群,SOSCET">
     <style type="text/css">
+    *::selection {
+        background-color: rgba(180, 200,240, 0.5);
+    }
     body,html {
         padding: 0px;
         margin: 0px;
         min-height: 16em;
-        font-family: "微軟正黑體";
+        font-family: "Microsoft Jhenghei";
+    }
+    a {
+        color: #8B9DD5;
+        text-decoration: none;
+    }
+    a:hover {
+        color: orange;
     }
     header {
         background: rgb(69,72,77);
@@ -17,7 +29,7 @@
         margin: 0px;
         padding: 0px;
     }
-    h1,h2,h3,h4,h5 {
+    .header {
         color: #fff;
         text-shadow: #000 0 0 0.3rem;
         text-align: center;
@@ -27,25 +39,21 @@
         margin: 0px;
         position: relative;
     }
-    h1 {
-        font-size: 5em;
-    }
-    h3 {
-        font-size: 2em;
-    }
     .mainHead {
         padding: 35vh 0px 0px 0px;
+        font-size: 5em;
     }
     .subHead {
         padding: 0.3em 0px;
+        font-size: 2em;
     }
     .nav {
         width: 100%;
-        position: absolute;
-        bottom: 5vh;
+        
         text-align: center;
         padding: 0px;
         margin: 0px;
+        margin-bottom: 5px;
         background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(241,241,241,1) 50%,rgba(225,225,225,1) 51%,rgba(246,246,246,1) 100%);
         box-shadow: #999 0 2px 7px;
         transition: all 0.3s ease 0.2s;
@@ -56,7 +64,7 @@
     .navitem {
         display: inline-block;
         height: 4rem;
-        width: 12em;
+        width: 8em;
         line-height: 4rem;
         color: #eee;
         text-shadow: #000 0 0 0.3rem;
@@ -76,17 +84,67 @@
         border-bottom: solid 1px;
         border-image: linear-gradient(to right, rgba(102,102,102,0) 0%,rgba(102,102,102,0.4) 35%,rgba(102,102,102,1) 50%,rgba(102,102,102,0.4) 65%,rgba(102,102,102,0) 100%) 1 stretch; /* W3C */
     }
+    .container {
+        width: 60%;
+        margin: auto;
+    }
+    .wrapper {
+        margin-top: 8em;
+        min-height: 500px;
+    }
+    #about,
+    #property,
+    #idea,
+    #gathering {
+        color: #333;
+        text-align: center;
+    }
+    #about h1 {
+
+    }
+
     </style>
 </head>
 <body>
     <header>
-        <h1 class="mainHead linerborder">SOSCET</h1>
-        <h3 class="subHead">東部開源人學生社群</h3>
+        <h1 class="header mainHead linerborder">SOSCET</h1>
+        <h3 class="header subHead">東部開源人學生社群</h3>
     </header>
     <div class="nav">
-        <a href="#" class="navitem">物件1</a>
-        <a href="#" class="navitem">物件2</a>
-        <a href="#" class="navitem">物件3</a>
+        <a href="#about" class="navitem">關於SOSCET</a>
+        <a href="#" class="navitem">理念</a>
+        <a href="#" class="navitem">性質</a>
+        <a href="#" class="navitem">聚會</a>
     </div>
+    <article class="wrapper">
+        <section id="about" class="container">
+            <h1>關於SOSCET</h1>
+            <p>
+                SOSCET 是由花蓮在地學生發起的學生開源社群，我們強調讓同學們在實作中學習各類資訊相關的技術，並藉由社群活動、讓學生們能夠彼此互相學習，助人助己。<br>
+                <del>SOSCET，就決定是你了！</del>
+            </p>
+        </section>
+        <section id="idea" class="container">
+            <h1>理念</h1>
+            <p>
+                關於我們的理念...
+            </p>
+        </section>
+        <section id="property" class="container">
+            <h1>性質</h1>
+            <p>
+                
+            </p>
+        </section>
+        <section id="gathering" class="container">
+            <h1>聚會</h1>
+            <p>
+                <p><a href="http://sitcon.kktix.cc/events/hualien-soscet-01">4/11定期聚 Sitcon x SOSCET</a></p>
+                
+            </p>
+        </section>
+    </article>
+    <footer>2012-2014 &copy; <a href="https://soscet.github.io/">SOSCET</a>, All Rights Reserved.</footer>
+
 </body>
 </html>
