@@ -1,0 +1,28 @@
+{
+  "name": "SOSCET_HomePage",
+  "version": "1.0.0",
+  "authors": [
+    "Tsundere Chen <tsundere@kisekinoashita.org>"
+  ],
+  "description": "SOSCET's HomePage",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "SOSCET"
+  ],
+  "license": "MIT",
+  "homepage": "soscet.org",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "flat-ui": "~2.2.2",
+    "less": "~2.5.1"
+  }
+}
