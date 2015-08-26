@@ -6,44 +6,35 @@
     z-index: 20;
 }
 
-.header {
-    background-image: url("https://s3-ap-northeast-1.amazonaws.com/tsundere-aws/header_back.jpg");
-    background-repeat: no-repeat;
+header {
+    background: url("https://s3-ap-northeast-1.amazonaws.com/tsundere-aws/header_back.jpg") no-repeat;
     background-size: cover;
-    height: 100%;
-    .container > .cover {
-        margin-top: 15em;
-        h1 {
-            color: rgba(255, 255, 255, 1);
-            text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
-        }
+    padding-top: 15em;
+    h1 {
+        color: rgba(255, 255, 255, 1);
+        text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
     }
 }
 
 @content-gap: 5em;
-.content {
-    .container {
-        margin-top: @content-gap;
-        margin-bottom: @content-gap;
-        #join .link {
-            margin-top: 1em;
-            margin-bottom: 1em;
-        }
-    }
+#wrapper {
     margin-top: 5%;
+    .container {
+        margin: @content-gap auto;
+        padding: 20px 15px;
+        border-bottom: 2px solid #555;
+    }
 }
 
-hr {
-    height: 2px;
-    background-color: #555;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 75%;
+#join .link {
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 
-
-i.fa {
-    margin-left: 1em;
-    margin-right: 1em;
+footer {
+    text-align: center;
+    background: #222;
+    color: #777;
+    padding: 3% 0 2% 0;
 }
 
