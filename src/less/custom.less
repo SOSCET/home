@@ -1,4 +1,4 @@
-div.navbar-wrapper {
+.navbar-wrapper {
     left: 0;
     right: 0;
     top: 20px;
@@ -6,7 +6,7 @@ div.navbar-wrapper {
     z-index: 20;
 }
 
-div.header {
+.header {
     background-image: url("https://s3-ap-northeast-1.amazonaws.com/tsundere-aws/header_back.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,11 +21,11 @@ div.header {
 }
 
 @content-gap: 5em;
-div.content {
+.content {
     .container {
         margin-top: @content-gap;
         margin-bottom: @content-gap;
-        div#join > div > div {
+        #join .link {
             margin-top: 1em;
             margin-bottom: 1em;
         }
@@ -46,3 +46,4 @@ i.fa {
     margin-left: 1em;
     margin-right: 1em;
 }
+
