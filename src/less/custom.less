@@ -9,11 +9,10 @@
 header {
     background: url("https://s3-ap-northeast-1.amazonaws.com/tsundere-aws/header_back.jpg") no-repeat;
     background-size: cover;
+    background-position: 0 -60px;
     padding-top: 15em;
-    h1 {
-        color: rgba(255, 255, 255, 1);
-        text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
-    }
+    text-indent: -999999px;
+    color: rgba(255, 255, 255, 0);
 }
 
 @content-gap: 5em;
@@ -38,3 +37,11 @@ footer {
     padding: 3% 0 2% 0;
 }
 
+.joinus-list > div {
+    padding: 0;
+    display: table;
+}
+.joinus-list > div > a {
+    width: 45px;
+    display: table-cell;
+}
